@@ -61,8 +61,9 @@ $(function() {
                 layer.msg('登录成功！')
                     // 把登录成功的token值存储
                 localStorage.setItem('token', res.token)
-                跳转到后台主页
-                location.href = '../../index.html'
+                    //跳转到后台主页
+                location.href = 'index.html'
+
             }
         })
     })
