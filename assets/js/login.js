@@ -56,7 +56,7 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('登录失败！')
+                    return layer.msg(res.message)
                 }
                 layer.msg('登录成功！')
                     // 把登录成功的token值存储
